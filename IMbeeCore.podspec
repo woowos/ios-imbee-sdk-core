@@ -12,8 +12,7 @@ Pod::Spec.new do |m|
   m.documentation_url = 'https://docs.imbee.es/ios/imbee-core/'
 
   m.source = {
-    :http => "https://s3.amazonaws.com/imbee/SDK/iOS/{m.version.to_s}/IMbeeCore.framework.zip",
-    :flatten => true
+    :http => "https://s3.amazonaws.com/imbee/SDK/iOS/{m.version.to_s}/IMbeeCore.framework.zip"
   }
 
   m.platform              = :ios
