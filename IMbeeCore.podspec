@@ -12,7 +12,7 @@ Pod::Spec.new do |m|
   m.documentation_url = 'https://docs.imbee.es/ios/imbee-core/'
 
   m.source = {
-    :http => "https://s3.amazonaws.com/imbee/SDK/iOS/{m.version.to_s}/IMbeeCore.framework.zip"
+    :http => "https://s3.amazonaws.com/imbee/SDK/iOS/IMbeeCore.framework.zip"
   }
 
   m.platform              = :ios
@@ -20,7 +20,7 @@ Pod::Spec.new do |m|
 
   m.requires_arc = true
 
-  m.vendored_frameworks = 'IMbeeCore.framework'
+  m.ios.vendored_frameworks = 'IMbee/IMbeeCore.framework'
   m.module_name = 'IMbeeCore'
 
 end
