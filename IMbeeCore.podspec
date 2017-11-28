@@ -1,26 +1,27 @@
-Pod::Spec.new do |m|
+Pod::Spec.new do |s|
+    s.name              = 'IMbeeCore'
+    s.version           = '0.9.7b'
+    s.summary           = 'IMbee Core SDK'
+    s.homepage          = 'https://docs.imbee.es/ios/imbee-core/'
 
-  version = '0.9.7b'
+    s.author            = { 'IMbee' => 'info@imbeemessenger.com' }
+    s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
 
-  m.name    = 'IMbeeCore'
-  m.version = version
+    s.platform          = :ios
+    s.source            = { :http => "https://s3.amazonaws.com/imbee/SDK/iOS/IMbeeCore-#{s.version.to_s}.zip" }
 
-  m.summary           = 'IMbee Core SDK'
-  m.description       = 'IMbee Core SDK'
-  m.homepage          = 'https://docs.imbee.es/ios/imbee-core/'
-  m.author            = { 'IMbee' => 'info@imbeemessenger.com' }
-  m.documentation_url = 'https://docs.imbee.es/ios/imbee-core/'
+    s.ios.deployment_target = '9.0'
+    s.ios.vendored_frameworks = 'IMbeeCore/IMbeeCore.framework'
 
-  m.source = {
-    :http => "https://s3.amazonaws.com/imbee/SDK/iOS/IMbeeCore.framework.zip"
-  }
-
-  m.platform              = :ios
-  m.ios.deployment_target = '9.0'
-
-  m.requires_arc = true
-
-  m.ios.vendored_frameworks = 'IMbee/IMbeeCore.framework'
-  m.module_name = 'IMbeeCore'
-
+    s.ios.dependency 'CocoaAsyncSocket', '~> 7.6'
+    s.ios.dependency 'CocoaLumberjack', '~> 3.3'
+    s.ios.dependency 'CocoaLumberjack/Swift'
+    s.ios.dependency 'Haneke', '~> 1.0'
+    s.ios.dependency 'KAProgressLabel', '~> 3.3'
+    s.ios.dependency 'KissXML', '~> 5.2'
+    s.ios.dependency 'libidn', '~> 1.33'
+    s.ios.dependency 'sqlite3', '~> 3.21'
+    s.ios.dependency 'SSZipArchive', '~> 2.1'
+    s.ios.dependency 'TTTAttributedLabel', '~> 2.0'
+    s.ios.dependency 'XMPPFramework', '~> 3.7'
 end
