@@ -1,0 +1,6 @@
+framework module IMbeeCore {
+  umbrella header "IMbeeCore.h"
+
+  export *
+  module * { export * }
+}
