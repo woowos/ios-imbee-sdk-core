@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'IMbeeCore'
-    s.version           = '0.9.7b'
+    s.version           = '0.9.7d'
     s.summary           = 'IMbee Core SDK'
     s.homepage          = 'https://docs.imbee.es/ios/imbee-core/'
 
