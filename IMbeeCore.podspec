@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'IMbeeCore'
-    s.version           = '0.9.7b'
+    s.version           = '0.9.7c'
     s.summary           = 'IMbee Core SDK'
     s.homepage          = 'https://docs.imbee.es/ios/imbee-core/'
 
@@ -13,15 +13,10 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.ios.vendored_frameworks = 'IMbeeCore/IMbeeCore.framework'
 
-    s.ios.dependency 'CocoaAsyncSocket', '~> 7.6'
-    s.ios.dependency 'CocoaLumberjack', '~> 3.3'
-    s.ios.dependency 'CocoaLumberjack/Swift'
     s.ios.dependency 'Haneke', '~> 1.0'
     s.ios.dependency 'KAProgressLabel', '~> 3.3'
-    s.ios.dependency 'KissXML', '~> 5.2'
-    s.ios.dependency 'libidn', '~> 1.33'
     s.ios.dependency 'sqlite3', '~> 3.21'
     s.ios.dependency 'SSZipArchive', '~> 2.1'
     s.ios.dependency 'TTTAttributedLabel', '~> 2.0'
-    s.ios.dependency 'XMPPFramework', '~> 3.7'
+    s.ios.dependency 'XMPPFramework', :git => 'https://github.com/robbiehanson/XMPPFramework.git', :commit => '75728a4'
 end
