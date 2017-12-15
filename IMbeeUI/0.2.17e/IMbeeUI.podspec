@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.source            = { :http => "https://s3.amazonaws.com/imbee/SDK/iOS/IMbeeUI-0.2.17e.zip" }
 
     s.ios.deployment_target = '9.0'
-    #s.ios.vendored_frameworks = 'IMbeeUI.framework'
+    s.ios.vendored_frameworks = 'IMbeeUI.framework'
 
     #s.ios.dependency 'CocoaAsyncSocket', '~> 7.6'
     #s.ios.dependency 'CocoaLumberjack', '~> 3.3'
