@@ -14,6 +14,5 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'IMbeeCore.framework'
 
     s.ios.dependency 'sqlite3', '~> 3.21'
-    s.ios.dependency 'SSZipArchive', '~> 2.1'
-    s.ios.dependency 'XMPPFramework', '~> 3.7.0imbee'
+    s.ios.dependency 'XMPPFramework', '~> 3.7.0imbee.2'
 end
